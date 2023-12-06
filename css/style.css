@@ -104,6 +104,7 @@ body {
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.5px;
+  box-shadow: 0 10px 30px hsla(223, 87%, 63%, 0.3);
 }
 
 .error-msg {
@@ -114,9 +115,9 @@ body {
   flex: 1;
 }
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}
 
 .illustration {
   width: 630px;
