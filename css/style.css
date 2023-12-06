@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* ## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* - Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700 */
+
+:root {
+  --color-1: hsl(223, 87%, 63%);
+  --color-2: hsl(223, 100%, 88%);
+  --color-3: hsl(354, 100%, 66%);
+  --color-4: hsl(0, 0%, 59%);
+  --color-5: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.head {
+  font-size: 50px;
+  color: var(--color-4);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.head span {
+  color: var(--color-5);
+  font-weight: 700;
+}
+
+.paragraph {
+  margin-bottom: 40px;
+}
+
+.form-box {
+  margin-bottom: 70px;
+  height: 75px;
+  max-height: 75px;
+  display: flex;
+}
+
+.input-box {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inp {
+  width: 420px;
+  height: 55px;
+  border: 1px solid var(--color-4);
+  border-radius: 50px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  color: var(--color-5);
+  outline: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.inputError {
+  border: 1px solid var(--color-3);
+}
+
+.inp::placeholder {
+  color: var(--color-4);
+}
+
+.btn {
+  width: 200px;
+  height: 55px;
+  background-color: var(--color-1);
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.error-msg {
+  padding-left: 30px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--color-3);
+  flex: 1;
+}
+
+/* .hidden {
+  display: none;
+} */
+
+.illustration {
+  width: 630px;
+  margin-bottom: 70px;
+}
+
+.soc-icon-box {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.soc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #f3f3f5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.soc-icon:hover {
+  background-color: var(--color-1);
+}
+
+.soc-icon svg {
+  width: 15px;
+  fill: var(--color-1);
+}
+
+.soc-icon:hover svg {
+  fill: #fff;
+}
+
+.fb-icon svg {
+  width: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--color-4);
+}
+
+@media (max-width: 900px) {
+  .form-box {
+    height: 185px;
+    max-height: 185px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+
+  .input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .inp {
+    width: 420px;
+  }
+
+  .btn {
+    width: 420px;
+  }
+
+  .error-msg {
+    padding-left: 0;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--color-3);
+  }
+}
